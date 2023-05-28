@@ -170,7 +170,32 @@ h3 {
       margin-top: 0;
       margin-right: 2rem;
     }
-  }
+}
+
+.cuerpo {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nosub{
+  text-decoration: none;
+}
+
+.container{
+  display: inline-block;
+  flex-direction: row;
+  direction: row;
+  margin-left: 150px;
+  margin-bottom: 48px;
+  text-decoration: none;
+}
+
+.info-container{
+  text-decoration: none;
+  text-align: center;
+}
 
 br {
     padding: 0;
@@ -212,9 +237,5 @@ a {
 }
 
 p{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 20px;
-    text-align: center;
     font-family: 'Gill Sans';
 }
