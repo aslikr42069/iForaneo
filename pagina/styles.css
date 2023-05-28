@@ -8,6 +8,8 @@ h3 {
     text-align: center;
 }
 
+
+
 br {
     padding: 0;
     margin: 0;
@@ -44,4 +46,11 @@ a {
     display: inline;
     padding: 0;
     margin: 0;    
+}
+
+p{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    text-align: center;
 }
