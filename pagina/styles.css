@@ -8,6 +8,11 @@
     margin: 0 auto;
 }
 
+.footer{
+  text-align: center;
+  font-family: 'Lucida Sans';
+}
+
 .footermap{
     float: right;
     margin-right: 88px;
