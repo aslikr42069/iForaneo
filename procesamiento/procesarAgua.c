@@ -20,19 +20,21 @@ char * getSinAgua(int municipio){
  }
  fseek(file, 0, SEEK_END);
  long file_len = ftell(file);
- printf("File size: %d\n", file_len);
  rewind(file);
  char * contenidos = (char *) malloc(sizeof(char) * file_len); 
  for(int i = 0; i < file_len; i++){
   contenidos[i] = getc(file);
  }
  fclose(file);
- 
- 
- return contenidos;
+ token_t tokenes = getTokensFromCSV((uintmax_t) file_len, contenidos);
+
+ int indice_token = (5 * (municipio + 1)) - 1;
+ uintmax_t entry_length = (tokenes.end[indice_token] - tokenes.start[indice_token]);
+ char * entry = (char *) calloc(entry_length + 1, sizeof(char));
+ for(int i = 0; i < entry_length; i++){
+  entry[i] = contenidos[tokenes.start[indice_token] + i];
+ }
+ entry[entry_length] = '\0';
+ return entry;
 }
 
-int main(){
- free(archivo);
- return 0;
-}
