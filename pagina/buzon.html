@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>iForaneo</title>
+</head>
+<body>
+    <header class="main-header">
+        <a class="main-logo" href="index.html">
+          <img src="if.png" style="height: 40px">
+            <strong>iForaneo</strong>
+        </a>
+        <nav id="nav" class="main-nav">
+          <div class="nav-links">
+            <a class="link-item" href="agua.html">Agua</a>
+            <a class="link-item" href="contaminacion.html">Contaminación</a>
+            <a class="link-item" href="movilidad.html">Movilidad</a>
+            <a class="link-item" href="electricidad.html">Electricidad</a>
+          </div>
+        </nav>
+        <button id="button-menu" class="button-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </header>
+    <div class="buzon">
+        <br>
+        <h1>Buzón de sugerencias</h1>
+        <br>
+        <form id="suggestion-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="suggestion">Sugerencia:</label>
+            <textarea id="suggestion" name="suggestion" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div id="suggestion-list">
+        <p>Sugerencias:</p>
+        <br>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

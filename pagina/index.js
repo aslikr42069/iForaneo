@@ -14,3 +14,27 @@ navWrapper.addEventListener("click", e => {
     toggleButton.classList.remove("close");
   }
 });
+
+document.getElementById("suggestion-form").addEventListener("submit", function(event) {
+  event.preventDefault(); 
+
+  
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var suggestion = document.getElementById("suggestion").value;
+
+  
+  var suggestionItem = document.createElement("div");
+  suggestionItem.classList.add("suggestion-item");
+  suggestionItem.innerHTML = "<strong>" + name + "</strong> (" + email + "):<br>" + suggestion;
+
+  
+  var suggestionList = document.getElementById("suggestion-list");
+  suggestionList.appendChild(suggestionItem);
+
+  
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("suggestion").value = "";
+});
+

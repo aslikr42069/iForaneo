@@ -243,3 +243,25 @@ a {
 p{
     font-family: 'Gill Sans';
 }
+
+h1 {
+  text-align: center;
+}
+
+form{
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]{
+  margin: 10px;
+}
+
+#suggestion-list {
+  margin-top: 20px;
+}
