@@ -4,6 +4,24 @@
     ;
 }
 
+.cuerpo {
+    margin: 0 auto;
+}
+
+.footermap{
+    float: right;
+    margin-right: 88px;
+    padding-top: 1px;
+    
+}
+
+.map {
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    
+}
+
 h3 {
     text-align: center;
 }
