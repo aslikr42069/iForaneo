@@ -8,14 +8,24 @@
     <title>iForaneo</title>
 </head>
 <body>
-    <nav style="margin: 0; padding:0"id="#navigation-bar" class="navigation-bar">
-        <ul>
-            <li><a style= "float: left;" href = "index.html">iForaneo</a></li>
-            <li><a class ="barra" style="float: right;" href="movilidad.html">Movilidad</a></li>
-            <li><a class ="barra"  style= "float: right;" href="contaminacion.html">Contaminación</a></li>
-            <li><a class ="barra" style= "float: right;" href="agua.html">Agua</a></li>
-            <li><a class ="barra" style= "float: right;" href="electricidad.html">Electricidad</a></li>
-        </ul>
-    </nav>
+    <header class="main-header">
+        <a class="main-logo" href="index.html">
+          <strong>iForaneo</strong>
+        </a>
+        <nav id="nav" class="main-nav">
+          <div class="nav-links">
+            <a class="link-item" href="agua.html">Agua</a>
+            <a class="link-item" href="contaminacion.html">Contaminación</a>
+            <a class="link-item" href="movilidad.html">Movilidad</a>
+            <a class="link-item" href="electricidad.html">Electricidad</a>
+          </div>
+        </nav>
+        <button id="button-menu" class="button-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </header>
+    <script src="index.js"></script>
 </body>
 </html>
