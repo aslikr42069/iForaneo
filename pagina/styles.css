@@ -172,6 +172,27 @@ h3 {
     }
 }
 
+.img {
+  align-items: center;
+}
+
+.container{
+  display: inline-block;
+  flex-direction: row;
+  direction: row;
+  margin-left: 90px;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  text-justify: inter-word;
+  position: relative;
+  width: 200px;
+  height: 250px;
+  background-color: #f0f0f0;
+  margin-right: 20px;
+  
+}
+
 .cuerpo {
   margin-left: 40px;
   margin-right: 40px;
@@ -179,23 +200,6 @@ h3 {
   text-align: center;
 }
 
-.nosub{
-  text-decoration: none;
-}
-
-.container{
-  display: inline-block;
-  flex-direction: row;
-  direction: row;
-  margin-left: 150px;
-  margin-bottom: 48px;
-  text-decoration: none;
-}
-
-.info-container{
-  text-decoration: none;
-  text-align: center;
-}
 
 br {
     padding: 0;
